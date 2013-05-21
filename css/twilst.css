@@ -1,0 +1,72 @@
+body {
+	background: #fafafa;
+	color: #3f3f3f;
+	font-weight: 300;
+}
+
+.masmorapps {
+	color: #aaaaaa;
+}
+
+.main {
+	padding-top: 10%
+}
+
+.twilst-icon {
+	display: inline-block;
+	background: url("../img/twilst-icon-nobg.svg");
+	background-size: 100%;
+	width: 120px;
+	height: 120px;
+	text-indent: -999em;
+	text-align: left;
+}
+
+.description {
+	margin-top: 15px;
+}
+
+@media only screen {
+	.description {
+		text-align: center !important;
+	}
+}
+
+@media only screen and (min-width: 48em)  {
+	.description {
+		text-align: left !important;
+	}
+}
+
+.twilst {
+	color: #555555;
+	font-weight: 900;
+	margin-bottom: 0px;
+}
+
+h1.small {
+	font-weight: 300;
+}
+
+.details {
+	margin-top: 0px;
+}
+
+.appstore {
+	margin-top: 40px;
+}
+
+.follow {
+	font-size: 0.8em;
+	margin-top: 20px;
+}
+
+.follow a, span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fc-webicon { display: inline-block; background-size: 100%; width: 30px; height: 30px; text-indent: -999em; text-align: left; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.fc-webicon.small { width: 20px; height: 20px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.no-svg .fc-webicon.twitter.small { background: url("../foundation/img/fc-webicon-twitter-s.png"); }
+.svg .fc-webicon.twitter { background: url("../foundation/img/fc-webicon-twitter.svg"); }
