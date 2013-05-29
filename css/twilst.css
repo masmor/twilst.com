@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-	padding-top: 10%
+	padding-top: 7%
 }
 
 .twilst-icon {
@@ -56,17 +56,34 @@ h1.small {
 	margin-top: 40px;
 }
 
+.appstore .badge {
+	display: inline-block;
+	background-size: 100%;
+	width: 135px;
+	height: 40px;
+	text-indent: -999em;
+	text-align: left;
+}
+
+.svg .appstore .badge {
+	background: url("../img/appstore-badge.svg");
+}
+
+.no-svg .appstore .badge {
+	background: url("../img/appstore-badge.png");
+}
+
 .follow {
 	font-size: 0.8em;
 	margin-top: 20px;
 }
 
-.follow a, span {
+.inline-middle {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.like {
+.share {
 	margin-top: 50px;
 	margin-bottom: 60px;
 }
