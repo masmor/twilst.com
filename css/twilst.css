@@ -78,14 +78,85 @@ h1.small {
 	margin-top: 20px;
 }
 
-.inline-middle {
+.share {
+	margin-top: 50px;
+}
+
+.screenshot {
+	margin-top: 40px;
+}
+
+.follow>a, .follow>span, .screenshot, .screenshot>span, .clearing-assembled {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.share {
-	margin-top: 50px;
-	margin-bottom: 60px;
+.screenshot span {
+	text-align: left !important;
+}
+
+.screenshot span>p {
+	font-weight: lighter;
+}
+
+@media only screen {
+	.clearing-assembled {
+		max-width: 100px;
+	}
+
+	.screenshot span {
+		width: 180px;
+	}
+
+	.screenshot span>p {
+		font-size: 0.75em;
+	}
+}
+
+@media only screen and (min-width: 48em)  {
+	.clearing-assembled {
+		max-width: inherit;
+	}
+
+	.screenshot span {
+		width: 240px;
+	}
+
+	.screenshot span>p {
+		font-size: 0.9em;
+	}
+}
+
+.clearing-assembled.clearing-blackout {
+	max-width: inherit;
+	display: inherit;
+	vertical-align: inherit;
+}
+
+.clearing-main-prev.disabled, .clearing-main-next.disabled {
+	visibility: hidden;
+}
+
+.clearing-container .carousel {
+	display: none;
+}
+
+.clearing-blackout a.clearing-close {
+	display: none;
+}
+
+@media only screen and (min-width: 48em) {
+		.clearing-assembled .clearing-container .visible-img {
+		height: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+.copyright {
+	font-size: 0.7em;
+	margin-top: 60px;
+	margin-bottom: 30px;
 }
 
 .fc-webicon { display: inline-block; background-size: 100%; width: 30px; height: 30px; text-indent: -999em; text-align: left; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }

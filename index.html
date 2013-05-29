@@ -58,21 +58,59 @@
 	<div class="row">
 		<div class="small-12 columns left text-center follow">
 			<a href="https://twitter.com/intent/user?screen_name=twilst"
-			 class="fc-webicon twitter small inline-middle">Twitter</a>
-				<a href="https://twitter.com/intent/user?screen_name=twilst"
-				 class="inline-middle">Follow @twilst</a>
-				<span class="inline-middle">for updates and support!</span>
+			 class="fc-webicon twitter small">Twitter</a>
+			<a href="https://twitter.com/intent/user?screen_name=twilst">Follow @twilst</a>
+			<span>for updates, feedback and support!</span>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="small-12 columns text-center share">
-		<a href="https://twitter.com/share" class="twitter-share-button"
-		 data-text="#Twilst for iPhone - Twitter Lists and Search with Tweet tagging"
-		 data-related="twilst:Updates, Feedback and Support"></a>
-		<div class="fb-like" data-href="http://twilst.com" data-send="false"
-		 data-layout="button_count" data-width="90"data-show-faces="false"
-		 data-font="arial"></div>
+			<a href="https://twitter.com/share" class="twitter-share-button"
+			 data-text="#Twilst for iPhone - Twitter Lists and Search with Tweet tagging"
+			 data-related="twilst:Updates, Feedback and Support"></a>
+			<div class="fb-like" data-href="http://twilst.com" data-send="false"
+			 data-layout="button_count" data-width="90"data-show-faces="false"
+			 data-font="arial"></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-6 columns text-center screenshot">
+			<h3 class="subheader">Lists First.</h3>
+			<ul class="clearing-thumbs" data-clearing>
+			  <li><a href="img/ss_lists_full.png"><img src="img/ss_lists.png">
+			  </a></li>
+			</ul>
+			<span>
+				<p>Lists and Saved Searches are shown all within a single tap from the Home screen, with editing and managing just another tap away.</p>
+
+				<p>The Home Timeline, Direct Messaging and Mention Notifications have been left out altogether to focus on what Twilst is designed for - gathering information efficiently.</p>
+			</span>
+		</div>
+
+		<div class="large-6 columns text-center screenshot">
+			<h3 class="subheader">Tag Tweets.</h3>
+			<ul class="clearing-thumbs" data-clearing>
+			  <li><a href="img/ss_tag_tweet_full.png"><img src="img/ss_tag_tweet.png">
+			  </a></li>
+			</ul>
+			<span>
+				<p>Don't let another important Tweet go forgotten.</p>
+
+				<p>Tag any Tweet by long-pressing it on the Timeline, or from the dedicated Tag button on the Tweet's details screen.</p>
+
+				<p>Tagged Tweets are saved locally to your iPhone, so access is instant and always available.</p>
+			</span>
+		</div>
+	</div>
+
+	<div class="row">
+	</div>
+
+	<div class="row">
+		<div class="small-12 columns text-center copyright">
+			<div>© 2013 Masaru Itoh / Masmor</div>
 		</div>
 	</div>
 
@@ -82,10 +120,14 @@
 	'.js><\/script>')
 	</script>
 
-	<script src="foundation/js/foundation.min.js"></script>
+	<script src="foundation/js/foundation/foundation.js"></script>
+	<script src="foundation/js/foundation/foundation.clearing.js"></script>
 
 	<script>
-		$(document).foundation();
+		$(document).foundation('clearing', {
+		  close_selectors:
+		   'div.clearing-blackout, div.visible-img, div.visible-img>img'
+		});
 	</script>
 
 	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
