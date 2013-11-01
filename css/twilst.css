@@ -96,8 +96,8 @@ h1.small {
 	text-align: left !important;
 }
 
-.screenshot span>p {
-	font-weight: lighter;
+.screenshot span>p, span>ul {
+	font-weight: 300;
 }
 
 .screenshot span>ul {
